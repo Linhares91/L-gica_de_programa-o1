@@ -1,0 +1,20 @@
+#include <stdio.h> 
+
+int main() {
+    float num1, resultado;
+    char resposta;
+
+    do {
+    printf("digite um número real: ");
+    scanf("%f", &num1);
+    resultado = num1 * 2;
+    printf("o dobro de %.2f é %.2f\n", num1, resultado);
+    printf("deseja continuar? (s/n): ");
+    scanf(" %c", &resposta);
+    if(resposta == 'n' || resposta == 'N') {
+        printf("Calculadora encerrada. Até logo!\n");
+    }   
+} while (resposta == 's' || resposta == 'S');
+
+return 0;
+}
