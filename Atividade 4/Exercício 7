@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main() {
+    int números[30];
+    int i;
+    int maior, menor;
+    int soma = 0;
+    float media;
+    int valores_maiores_que_a_media = 0;
+
+    for(i = 0; i < 30; i++) {
+        printf("Digite o %dº valor: ", i + 1);
+        scanf("%d", &números[i]);
+
+        soma += números[i];
+        
+        if(i == 0) {
+            maior = números[i];
+            menor = números[i];
+        } else {
+            if(números[i] > maior) {
+                maior = números[i];
+            }
+
+            if(números[i] < menor) {
+                menor = números[i];
+            }
+        }
+    }
+
+    media = soma / 30.0;
+    
+    printf("Números pares do vetor:\n");
+    for(i = 0; i < 30; i++) {
+        if(números[i] % 2 == 0) {
+            printf("%d ", números[i]);
+        }
+    }
+    
+    for(i = 0; i < 30; i++) {
+        if(números[i] > media) {
+            valores_maiores_que_a_media++;
+        }
+    }
+
+    printf("\n\nMenor valor: %d", menor);
+    printf("\nMaior valor: %d", maior);
+    printf("\nMédia dos valores: %.2f", media);
+    printf("\nQuantidade de valores maiores que a média: %d\n", valores_maiores_que_a_media);
+
+    return 0;
+}
