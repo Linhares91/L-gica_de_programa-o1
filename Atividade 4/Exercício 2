@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int números[8];
+    int i;
+ for (i = 0; i < 8; i++) {
+ printf("Digite seu %dº número inteiro: ", (i + 1));
+ scanf("%d", &números[i]);
+ } 
+ printf("\n--- O TRIPLO DOS NÚMEROS ---\n");
+ for (i = 0; i < 8; i++) {
+ printf("O triplo do %dº número = %d\n", (i + 1), números[i] * 3);
+ }
+ return 0;
+}
