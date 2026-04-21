@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int números[10];
+    int i;
+ for (i = 0; i < 10; i++) {
+ printf("Digite um número inteiro %d: ", (i + 1));
+ scanf("%d", &números[i]);
+ } 
+ printf("\n--- ORDEM DOS NÚMEROS ---\n");
+ for (i = 0; i < 10; i++) {
+ printf("NÚMERO %d: %d\n", (i + 1), números[i]);
+ }
+ return 0;
+}
