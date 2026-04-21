@@ -1,0 +1,41 @@
+Lista de Exercícios Teóricos - SPOLOG1
+1. Explique a diferença entre While e Do…While.
+O “While” verifica a condição antes de executar e se ela for falsa o bloco não será
+executado nenhuma vez, já o “Do…While” executa o bloco pelo menos uma vez, pois a
+condição só é verificada no final.
+
+2. Como funciona o laço for ?
+O laço for é usado quando sabemos quantas vezes queremos repetir algo. Ele possui três
+partes: Inicialização (Uma variável de controle); Condição (a regra para continuar
+repetindo); Atualização (modificar a variável de controle para que a condição
+eventualmente se torne falsa).
+
+3. O que é uma variável? Explique.
+As variáveis são espaços na memória usados para armazenar um conteúdo que pode ser
+alterado durante a execução de um programa. Cada variável, tem um tipo e cada um deles
+aloca um espaço diferente na memória.
+
+4. Para que serve um fluxograma?
+Um “fluxograma” serve para representar graficamente as etapas de um algoritmo. Ele ajuda
+a entender a sequência das ações, decisões e repetições de um programa.
+
+5. O que é um algoritmo?
+Um “algoritmo” é uma sequência finita de passos organizados para resolver um problema
+ou realizar um trabalho.
+
+6. Explique com suas palavras o que é uma condição.
+Uma “condição” é uma expressão que pode ser verdadeira ou falsa. Ela é usada para tomar
+decisões no programa.
+
+7. Quais os operadores relacionais temos na linguagem C?
+Os operadores relacionais da linguagem C são:
+● == igual a
+● != diferente de
+● > maior que
+● < menor que
+● >= maior ou igual a
+● <= menor ou igual a
+
+8. O que são tipos primitivos?
+Os “tipos primitivos” são os tipos básicos de dados da linguagem, usados para armazenar
+diferentes tipos de informação. Em C temos: int, float/double, char, string e boolean
