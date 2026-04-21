@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int números[10];
+    int A, B, C;
+    int contA = 0, contB = 0, contC = 0;
+    int i;
+
+    for(i = 0; i < 10; i++) {
+        printf("Digite o %dº valor do vetor: ", (i + 1));
+        scanf("%d", &números[i]);
+    }
+
+    printf("Digite o valor de A: ");
+    scanf("%d", &A);
+
+    printf("Digite o valor de B: ");
+    scanf("%d", &B);
+
+    printf("Digite o valor de C: ");
+    scanf("%d", &C);
+
+    for(i = 0; i < 10; i++) {
+        if(números[i] == A) {
+            contA++;
+        }
+
+        if(números[i] == B) {
+            contB++;
+        }
+
+        if(números[i] == C) {
+            contC++;
+        }
+    }
+
+    // Exibição dos resultados
+    printf("\nO número %d apareceu %d vez(es).\n", A, contA);
+    printf("O número %d apareceu %d vez(es).\n", B, contB);
+    printf("O número %d apareceu %d vez(es).\n", C, contC);
+
+    return 0;
+}
