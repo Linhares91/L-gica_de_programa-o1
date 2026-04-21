@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int números[10];
+    int i;
+ for (i = 0; i < 10; i++) {
+ printf("Digite seu %dº número inteiro: ", (i + 1));
+ scanf("%d", &números[i]);
+ } 
+ printf("\n--- ORDEM DOS INVERSA NÚMEROS ---\n");
+ for (i = 9; i >= 0; i--) {
+ printf("%dº número: %d\n", (i + 1), números[i]);
+ }
+ return 0;
+}
